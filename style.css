@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+    font-size: 12px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin: 3rem auto;
+}
+.container h3{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+.cards-container{
+    /* border: 2px solid red; */
+    padding: 1rem;
+    display:flex;
+    justify-content:center;
+    gap: 2rem;
+}
+.cards-container .card{
+    flex-basis: 380px;
+    border: 2px solid #000;
+    background: grey;
+    position: relative;
+}
+.card .child{
+    width: 100px;
+    border: 1.8px solid #000;
+    padding: 8px 10px;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background:rgb(227, 182, 166);
+}
+.card .child1{
+    width: 100px;
+    border: 1.8px solid #000;
+    padding: 8px 10px;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background:rgb(220, 42, 42);
+}
+.card .child2{
+    width: 100px;
+    border: 1.8px solid #000;
+    padding: 8px 10px;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background:rgb(227, 202, 156);
+}
+.card p{
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:991px) {
+    .cards-container{
+        flex-wrap: wrap;
+    }
+    .cards-container .last{
+        flex-basis: 100%;
+    }
+}
+@media screen and (max-width:576px) {
+    .cards-container .card{
+        flex-basis: 100%;
+    }
+}
